@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ol,
+ul {
+    list-style: none;
+}
+del {
+    text-decoration: line-through;
+}
+body {
+    font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #1c2c40;
+    overflow-x: hidden;
+    min-width: 320px;
+    font-weight: 400;
+}
+input,
+textarea,
+select {
+    font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+a {
+    color: #1c2c40;
+}
+
+a:hover,
+.submit:hover {
+    filter: alpha(opacity = 85);
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    opacity: 0.85;
+}
+.thumb {
+    display: block;
+}
+.thumb img {
+    display: block;
+    width: 100%;
+}
+p {
+    line-height: 1.6em;
+    font-size: 16px;
+    font-family: "Circular-Std-Regular", Arial;
+    font-weight: 400;
+}
+.hidden {
+    display: none;
+}
+br.clear {
+    clear: both;
+    line-height: 0;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 980px;
+}
+@font-face {
+    font-family: "Circular-Std-Regular";
+    src: url("../fonts/CircularStd-Regular.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Regular.woff") format("woff");
+    font-style: normal;
+}
+@font-face {
+    font-family: "Circular-Std-Bold";
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+    font-style: normal;
+}
+::placeholder {
+    color: #d3cfcb;
+}
+$primarycolor : #2dca73;
+$fontcolor : #fff;
+#home{   
+    background: url(../images/bg.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    .wrapper{
+        header{
+            display: flex;
+            justify-content: space-between;
+             width: 100%;
+             padding-top: 40px;
+            .left{
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                h1{
+                    width:20%;
+                    a{
+                        display: block;
+                        img{
+                            display:block;
+                            width:100%
+                        }
+                    }
+                }
+                nav{
+                    width: 70%;
+                    ul{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 95%;
+                        margin-left: 5%;
+                        li{
+                            width: 80%;
+                            display: flex;
+	                        justify-content: space-between;
+                            a{
+                                display: block;  
+                            }
+                        }
+                    }
+                }
+            }  
+			.right { 
+                width: 20%;
+				ul { 
+                    display:flex ;
+                    justify-content: space-between;
+					li{
+                        a.button{ 
+                            color: $fontcolor;
+                            background: $primarycolor;
+                            padding: 13px 31px;
+                            border-radius: 8px;
+                            transition: 0.4s ease-in;
+                            &:hover{
+                                background: $fontcolor;
+                                color: $primarycolor;
+                                transition: 0.4s ease-in;
+                            }
+                        }
+                    } 
+				}
+			}
+		}
+		#spotlight { 
+            text-align: center;
+			h1 { 
+                font-size: 50px;
+                font-weight: 700;
+                margin: 0 auto;
+                text-align: center;
+                padding-top:10%;
+                width: 57%;
+                color: $fontcolor;
+			}
+			p { 
+                margin: 10px auto;
+                text-align: center;
+                color: $fontcolor;
+                width: 70%;
+                font-size: 24px;
+			}
+			form{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 14px;
+                background: $fontcolor;
+                width: 70%;
+                margin: 0 auto;
+                margin-top: 5%;
+                input[type=text]{
+                    border: 1px solid $primarycolor;
+                    width: 70%;
+                    padding: 8px 25px;
+                    border-radius: 8px;
+                }
+                input[type=submit]{
+                    background: $primarycolor;
+                    color: $fontcolor;
+                    padding: 9px 35px;
+                    border-radius: 7px;
+                    transition: 0.4s ease-in;
+                    cursor: pointer;
+                    &:hover{
+                        background: $fontcolor;
+                        color: $primarycolor;
+                        transition: 0.4s ease-in;
+                    }
+                }
+            }
+		}
+	}
+}
+            
